@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arabic-text-normalizer"
+version = "0.1.0"
+description = "A small, dependency-free library for normalizing Arabic text for search and NLP."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Abdul Saheer Mecheri" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["arabic", "nlp", "normalization", "search", "text-processing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Arabic",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+arabic-normalize = "arabic_text_normalizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src/arabic_text_normalizer/normalizer.py"]
+addopts = "--doctest-modules"

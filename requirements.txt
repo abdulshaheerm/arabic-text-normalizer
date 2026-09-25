@@ -1,0 +1,3 @@
+# arabic-text-normalizer has no runtime dependencies (standard library only).
+# Development / test requirements:
+pytest>=7
