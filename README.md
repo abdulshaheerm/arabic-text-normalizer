@@ -4,6 +4,8 @@
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
+**[▶ Try the live demo on Hugging Face](https://huggingface.co/spaces/abdulshaheerm/arabic-text-normalizer)** · runs in your browser, no install
+
 A small, dependency-free Python library for normalizing Arabic text before search indexing, retrieval, and NLP.
 
 ```python
